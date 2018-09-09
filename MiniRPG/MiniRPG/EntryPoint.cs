@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MiniRPG
 {
-    class Program
+    class EntryPoint
     {
         static void Main(string[] args)
         {
