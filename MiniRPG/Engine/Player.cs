@@ -1,6 +1,7 @@
 ﻿using Engine.Exceptions;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace Engine
 {
@@ -21,7 +22,7 @@ namespace Engine
 
         public IReadOnlyCollection<Item> Items
         {
-            get { return new IReadOnlyCollection<Item>(_items); }
+            get { return new ReadOnlyCollection<Item>(_items); }
         }
 
         public void Clear() => _items = new List<Item>();
@@ -96,7 +97,7 @@ namespace Engine
         public void ApplyItem(Item item)
         {
             MaxHealth += item.Health;
-            Power += item.Power;
+            Power += item.Damage;
 
             _items.Add(item);
         }

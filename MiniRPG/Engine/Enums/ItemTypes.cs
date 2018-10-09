@@ -1,6 +1,6 @@
 ﻿namespace Engine.Enums
 {
-    enum ItemTypes
+    public enum ItemTypes
     {
         Weapon = 1,
         Armor = 2

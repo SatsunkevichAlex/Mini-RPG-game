@@ -44,12 +44,12 @@ namespace Engine.Actions
                     newItem.Health = result.EffectResult;
                     break;
                 case ItemTypes.Weapon:
-                    newItem.Demage = result.EffectResult;
+                    newItem.Damage = result.EffectResult;
                     break;
             }
 
             state.CurrentPlayer.ApplyItem(newItem);
-            state.CurrentPlayer.DecreaseCoint(shop.Price);
+            state.CurrentPlayer.DecreaseCoins(shop.Price);
 
             return result;
         }

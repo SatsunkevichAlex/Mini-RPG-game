@@ -1,9 +1,8 @@
-﻿
-using GameConfig.ConfigSection;
+﻿using GameConfig.ConfigSection;
 
 namespace GameConfig
 {
-    interface IGameConfigReader
+    public interface IGameConfigReader
     {
         GameConfiguration ReadConfig();
     }

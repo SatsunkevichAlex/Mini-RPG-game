@@ -11,7 +11,7 @@ namespace Engine.Actions
     public sealed class AttackActionResult : ActionResultBase
     {
         public bool IsWin { get; set; }
-        public bool Level { get; set; }
+        public int Level { get; set; }
     }
 
     internal sealed class AttackAction : IAction
@@ -22,7 +22,7 @@ namespace Engine.Actions
 
             int winProbability =
                 Math.Min(
-                    config.Battle.MinWinProbability + state.CurrebtPlayer.Power * config.Battle.IncreasePowerProbability,
+                    config.Battle.MinWinProbability + state.CurrentPlayer.Power * config.Battle.IncreasePowerProbability,
                     config.Battle.MaxWinProbability);
 
             int random = Generator.Next(1, 100);
@@ -54,7 +54,7 @@ namespace Engine.Actions
 
         public ActionTypes Type => ActionTypes.Attack;
 
-        private int GetDamge(int currentHealth, BattleResultConfiguration config)
+        private int GetDemage(int currentHealth, BattleResultConfiguration config)
         {
             switch (config.HealthChangeType)
             {

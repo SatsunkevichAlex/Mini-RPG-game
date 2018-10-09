@@ -20,12 +20,12 @@ namespace Engine.Actions
                 return result;
             }
 
-            state.CurrentPlayer.DecreaseCoins(config.Shop.Heal.Prcie);
+            state.CurrentPlayer.DecreaseCoins(config.Shops.Heal.Price);
             result.HealAction = state.CurrentPlayer.ApplyHeal(GetItemEffect(config.Shops.Heal));
             return result;
         }
 
-        public bool CabApply(GameState state, GameConfiguration config)
+        public bool CanApply(GameState state, GameConfiguration config)
         {
             if (state.CurrentPlayer.Coins < config.Shops.Heal.Price)
                 return false;
