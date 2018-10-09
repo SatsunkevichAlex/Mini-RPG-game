@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="EntryPoint.cs" />
     <Compile Include="IoC\DefaultRegistry.cs" />
+    <Compile Include="IoC\Resolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
