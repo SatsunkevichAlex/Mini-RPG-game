@@ -49,6 +49,8 @@
     <Compile Include="Actions\Base\ShopActionBase.cs" />
     <Compile Include="Actions\BuyItemActionResult.cs" />
     <Compile Include="Actions\HealAction.cs" />
+    <Compile Include="AI\GameAI.cs" />
+    <Compile Include="AI\Node.cs" />
     <Compile Include="Enums\ActionTypes.cs" />
     <Compile Include="Enums\ItemTypes.cs" />
     <Compile Include="Exceptions\PlayerDataException.cs" />
