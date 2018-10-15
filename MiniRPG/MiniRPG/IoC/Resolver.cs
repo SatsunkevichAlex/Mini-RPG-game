@@ -2,7 +2,7 @@
 
 namespace MiniRPG.IoC
 {
-    internal static class Resolver
+    internal static class RTResolver
     {
         private static IContainer _container;
 

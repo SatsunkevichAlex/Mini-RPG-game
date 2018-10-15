@@ -20,7 +20,7 @@ namespace MiniRPG.Client
             _menu = new Dictionary<char, GameMenuItem>();
             _messagesFromActions = new List<string>();
 
-            _game = new Game(Resolver.Current.GetInstance<IGameConfigReader>());
+            _game = new Game(RTResolver.Current.GetInstance<IGameConfigReader>());
 
             _menu.Add('w', new GameMenuItem("Attack", Attack));
             _menu.Add('a', new GameMenuItem("Buy Weapon", BuyWeapon));

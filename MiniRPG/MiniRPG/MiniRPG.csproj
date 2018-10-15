@@ -110,7 +110,6 @@
     <Compile Include="Client\GameConsoleClient.cs" />
     <Compile Include="Client\GameMenuItem.cs" />
     <Compile Include="EntryPoint.cs" />
-    <Compile Include="GameAI.cs" />
     <Compile Include="IoC\DefaultRegistry.cs" />
     <Compile Include="IoC\Resolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

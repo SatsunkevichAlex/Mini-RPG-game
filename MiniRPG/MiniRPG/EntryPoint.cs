@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MiniRPG.Client;
 
 namespace MiniRPG
 {
@@ -10,6 +6,8 @@ namespace MiniRPG
     {
         static void Main(string[] args)
         {
+            GameConsoleClient client = new GameConsoleClient();
+            client.Start();
         }
     }
 }

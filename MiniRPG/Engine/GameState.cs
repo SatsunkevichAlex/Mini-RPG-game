@@ -20,7 +20,7 @@ namespace Engine
                           config.InitialPlayerCoins);
         }
 
-        public GameState DeepCoopy()
+        public GameState DeepCopy()
         {
             return new GameState
             {
