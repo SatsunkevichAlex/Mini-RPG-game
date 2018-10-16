@@ -4,15 +4,15 @@ namespace MiniRPG.IoC
 {
     internal static class PTResolver
     {
-        private static IContainer _container;
+        private static IContainer Сontainer { get; set; }
 
         public static IContainer Current
         {
             get
             {
-                if (_container == null)
-                    _container = Initialize();
-                return _container;
+                if (Сontainer == null)
+                    Сontainer = Initialize();
+                return Сontainer;
             }
         }
 
