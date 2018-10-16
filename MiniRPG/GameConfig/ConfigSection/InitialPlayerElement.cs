@@ -4,7 +4,7 @@ namespace GameConfig.ConfigSection
 {
     public class InitialPlayerElement : ConfigurationElement
     {
-        [ConfigurationProperty("initalPlayerHealth", DefaultValue = "100", IsRequired = true)]
+        [ConfigurationProperty("initialPlayerHealth", DefaultValue = "100", IsRequired = true)]
         [IntegerValidator(ExcludeRange = false, MinValue = 1)]
         public int InitialPlayerHealth
         {
@@ -32,8 +32,8 @@ namespace GameConfig.ConfigSection
         [IntegerValidator(ExcludeRange = false, MinValue = 0)]
         public int InitialPlayerCoins
         {
-            get { return (int)this["initialPlayerCoin"]; }
-            set { this["InitialPlayerCoins"] = value; }
+            get { return (int)this["initialPlayerCoins"]; }
+            set { this["initialPlayerCoins"] = value; }
         }
     }
 }

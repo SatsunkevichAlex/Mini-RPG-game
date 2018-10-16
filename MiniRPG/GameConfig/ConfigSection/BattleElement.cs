@@ -36,11 +36,11 @@ namespace GameConfig.ConfigSection
             set { this["winResult"] = value; }
         }
 
-        [ConfigurationProperty("looseResule")]
+        [ConfigurationProperty("looseResult")]
         public BattleResultElement LooseResult
         {
-            get { return (BattleResultElement)this["looseResule"]; }
-            set { this["looseResule"] = value; }
+            get { return (BattleResultElement)this["looseResult"]; }
+            set { this["looseResult"] = value; }
         }
     }
 

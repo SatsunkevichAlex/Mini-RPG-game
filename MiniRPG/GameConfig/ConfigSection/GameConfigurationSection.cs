@@ -4,11 +4,11 @@ namespace GameConfig.ConfigSection
 {
     public sealed class GameConfigurationSection : ConfigurationSection
     {
-        [ConfigurationProperty("initaialPlayerConfig")]
+        [ConfigurationProperty("initialPlayerConfig")]
         public InitialPlayerElement InitialPlayer
         {
-            get { return (InitialPlayerElement)this["initalPlayerConfig"]; }
-            set { this["initalPlayerConfig"] = value; }
+            get { return (InitialPlayerElement)this["initialPlayerConfig"]; }
+            set { this["initialPlayerConfig"] = value; }
         }
 
         [ConfigurationProperty("battle")]
