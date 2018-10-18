@@ -71,7 +71,14 @@ namespace MiniRPGTests
                             _config.InitialPlayer.InitialPlayerMaxHealth +
                             _config.InitialPlayer.InitialPlayerPower, 38);
 
-            Assert.AreEqual(_mappedC)
+            Assert.AreEqual(_mappedConfig.Shops.Armor.EffectFrom,
+                            _config.Shops.Armor.EffectFrom);
+
+            Assert.AreEqual(_mappedConfig.Shops.Weapon.EffectTo,
+                            _config.Shops.Weapon.EffectTo);
+
+            Assert.AreEqual(_mappedConfig.Shops.Heal.Price,
+                            _config.Shops.Heal.Price);
         }
     }
 }
