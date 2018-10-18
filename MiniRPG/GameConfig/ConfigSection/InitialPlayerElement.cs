@@ -22,7 +22,7 @@ namespace GameConfig.ConfigSection
 
         [ConfigurationProperty("initialPlayerPower", DefaultValue = "1", IsRequired = true)]
         [IntegerValidator(ExcludeRange = false, MinValue = 0)]
-        public int InitialPlayer
+        public int InitialPlayerPower
         {
             get { return (int)this["initialPlayerPower"]; }
             set { this["initialPlayerPower"] = value; }
