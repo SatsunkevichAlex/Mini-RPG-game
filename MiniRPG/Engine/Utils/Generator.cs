@@ -2,7 +2,7 @@
 
 namespace Engine.Utils
 {
-    internal static class Generator
+    public static class Generator
     {
         private static readonly Random _generator = new Random();
         private static readonly object locker = new object();

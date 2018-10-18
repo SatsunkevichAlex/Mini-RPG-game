@@ -49,12 +49,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GameConfigTest.cs" />
+    <Compile Include="GeneratorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Engine\Engine.csproj">
+      <Project>{7C0CFB4F-1235-42FB-BAEA-235735A95117}</Project>
+      <Name>Engine</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GameConfig\GameConfig.csproj">
       <Project>{E6FAFD55-6360-47D8-A18E-9E70B0E8FC58}</Project>
       <Name>GameConfig</Name>
