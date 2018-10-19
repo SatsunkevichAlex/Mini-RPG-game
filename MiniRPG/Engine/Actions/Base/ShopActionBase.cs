@@ -3,7 +3,7 @@ using GameConfig.Models;
 
 namespace Engine.Actions.Base
 {
-    internal abstract class ShopActionBase
+    public abstract class ShopActionBase
     {
         protected int GetItemEffect(ShopConfiguration shop)
         {

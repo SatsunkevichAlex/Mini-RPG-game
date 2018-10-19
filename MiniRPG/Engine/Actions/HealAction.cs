@@ -9,7 +9,7 @@ namespace Engine.Actions
         public int HealAction { get; set; }
     }
 
-    internal sealed class HealAction : ShopActionBase, IAction
+    public sealed class HealAction : ShopActionBase, IAction
     {
         public ActionResultBase Process(GameState state, GameConfiguration config)
         {

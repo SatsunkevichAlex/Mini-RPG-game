@@ -3,7 +3,7 @@ using GameConfig.ConfigSection;
 
 namespace Engine.Actions.Base
 {
-    interface IAction
+    public interface IAction
     {
         ActionTypes Type { get; }
 
