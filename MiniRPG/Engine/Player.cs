@@ -32,13 +32,13 @@ namespace Engine
             if (MaxHealth != 0)
                 throw new PlayerDataException("Player already initialized");
 
-            if (Health > maxHealth)
+            if (health > maxHealth)
                 throw new ArgumentOutOfRangeException("health", "Health can not be greater than MaxHealth");
 
-            if (Coins < 0)
+            if (coins < 0)
                 throw new ArgumentOutOfRangeException("Coins", "Conis can not bet less than 0");
 
-            if (Power < 0)
+            if (power < 0)
                 throw new ArgumentOutOfRangeException("Power", "Powe can not be less than 0");
 
             Health = health;
